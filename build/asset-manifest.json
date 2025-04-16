@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Vandevrai/static/css/main.42363587.css",
+    "main.js": "/Vandevrai/static/js/main.b4c5c0ae.js",
+    "static/js/453.2cc016f2.chunk.js": "/Vandevrai/static/js/453.2cc016f2.chunk.js",
+    "static/media/Tree logo.jpg": "/Vandevrai/static/media/Tree logo.99f642947c81de45b095.jpg",
+    "index.html": "/Vandevrai/index.html",
+    "main.42363587.css.map": "/Vandevrai/static/css/main.42363587.css.map",
+    "main.b4c5c0ae.js.map": "/Vandevrai/static/js/main.b4c5c0ae.js.map",
+    "453.2cc016f2.chunk.js.map": "/Vandevrai/static/js/453.2cc016f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42363587.css",
+    "static/js/main.b4c5c0ae.js"
+  ]
+}

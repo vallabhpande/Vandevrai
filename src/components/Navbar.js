@@ -6,7 +6,7 @@ import logo from "../assets/Tree logo.jpg";
 const navItems = [
   {
     label: "Home",
-    href: "/",
+    href: "/Vandevrai",
   },
   {
     label: "About Us",
@@ -80,7 +80,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-green-800 text-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        <Link to="/" className="flex items-center gap-2">
+        <Link to="/Vandevrai" className="flex items-center gap-2">
           <img
             src={logo}
             alt="Logo"
