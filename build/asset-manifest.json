@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Vandevrai/static/css/main.12c348d5.css",
-    "main.js": "/Vandevrai/static/js/main.065d4843.js",
+    "main.css": "/Vandevrai/static/css/main.aab6c694.css",
+    "main.js": "/Vandevrai/static/js/main.d14d4e8f.js",
     "static/js/453.2cc016f2.chunk.js": "/Vandevrai/static/js/453.2cc016f2.chunk.js",
     "static/media/Tree logo.jpg": "/Vandevrai/static/media/Tree logo.99f642947c81de45b095.jpg",
     "static/media/download.jpeg": "/Vandevrai/static/media/download.0898c39ad518f20ad67b.jpeg",
@@ -10,12 +10,12 @@
     "static/media/download (1).jpeg": "/Vandevrai/static/media/download (1).3e9f0236ac5029a7e836.jpeg",
     "static/media/team6.jpeg": "/Vandevrai/static/media/team6.0277fbfdf68568c989a8.jpeg",
     "index.html": "/Vandevrai/index.html",
-    "main.12c348d5.css.map": "/Vandevrai/static/css/main.12c348d5.css.map",
-    "main.065d4843.js.map": "/Vandevrai/static/js/main.065d4843.js.map",
+    "main.aab6c694.css.map": "/Vandevrai/static/css/main.aab6c694.css.map",
+    "main.d14d4e8f.js.map": "/Vandevrai/static/js/main.d14d4e8f.js.map",
     "453.2cc016f2.chunk.js.map": "/Vandevrai/static/js/453.2cc016f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12c348d5.css",
-    "static/js/main.065d4843.js"
+    "static/css/main.aab6c694.css",
+    "static/js/main.d14d4e8f.js"
   ]
 }

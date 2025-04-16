@@ -30,9 +30,9 @@ const OurTeam = () => {
 
   useEffect(() => {
     const updateView = () => {
-      setIsMobile(window.innerWidth < 1024); // less than lg
+      setIsMobile(window.innerWidth < 1024); // Tailwind's `lg` breakpoint
     };
-    updateView();
+    updateView(); // Call on mount
     window.addEventListener("resize", updateView);
     return () => window.removeEventListener("resize", updateView);
   }, []);
@@ -76,9 +76,9 @@ const OurTeam = () => {
       </section>
 
       {/* Team Cards */}
-      <div className="relative w-full max-w-7xl mx-auto p-5">
+      <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-10">
         {isMobile ? (
-          // Mobile & Tablet: Grid View
+          // Mobile View: Grid
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {teamMembers.map((member, index) => (
               <div
@@ -88,17 +88,17 @@ const OurTeam = () => {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-green-400 shadow-md"
+                  className="w-32 h-32 max-w-full rounded-full mx-auto mb-4 object-cover border-4 border-green-400 shadow-md"
                 />
                 <h4 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h4>
-                <p className="text-sm text-gray-600 mb-4">{member.role}</p>
+                <p className="text-sm text-gray-600 mb-2">{member.role}</p>
                 <p className="text-xs text-gray-500">{member.memberinfo}</p>
               </div>
             ))}
           </div>
         ) : (
-          // Desktop: Slider View
-          <div className="flex justify-center gap-6 items-center">
+          // Desktop View: Animated Slider
+          <div className="flex justify-center items-center gap-6 overflow-hidden">
             {getVisibleMembers().map((member, index) => {
               let blurClass = "";
               if (Math.abs(member.position) === 2) blurClass = "blur-sm opacity-40 scale-90";
@@ -114,10 +114,10 @@ const OurTeam = () => {
                     <img
                       src={member.image}
                       alt={member.name}
-                      className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-gradient-to-r from-blue-400 via-pink-500 to-purple-600 shadow-xl"
+                      className="w-32 h-32 max-w-full rounded-full mx-auto mb-4 object-cover border-4 border-gradient-to-r from-blue-400 via-pink-500 to-purple-600 shadow-xl"
                     />
                     <h4 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h4>
-                    <p className="text-sm text-gray-600 mb-4">{member.role}</p>
+                    <p className="text-sm text-gray-600 mb-2">{member.role}</p>
                     <p className="text-xs text-gray-500">{member.memberinfo}</p>
                   </div>
                 </div>
